@@ -1,6 +1,6 @@
 package test.lesson2;
 
-public class Lesson2 {
+public class DataTypes {
 
     public static void main(String[] args) {
         int age;

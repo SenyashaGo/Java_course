@@ -1,9 +1,8 @@
 package test.lesson3;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
-public class Lesson3 {
+public class Math {
 
     public static void main(String[] args) {
 //        Scanner scan = new Scanner(System.in);

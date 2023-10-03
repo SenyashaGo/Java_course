@@ -1,10 +1,8 @@
 package test.lesson4;
 
-import java.util.Scanner;
-
-public class Lesson4 {
+public class Scanner {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
+        java.util.Scanner scan = new java.util.Scanner(System.in);
         System.out.print("Введите логин: ");
         String login = scan.nextLine();
         System.out.print("Введите пароль: ");

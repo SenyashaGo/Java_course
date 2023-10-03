@@ -2,7 +2,7 @@ package test.lesson4;
 
 import java.util.Scanner;
 
-public class Lesson4_2 {
+public class ConditionalStatements {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
