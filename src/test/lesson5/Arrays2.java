@@ -40,17 +40,49 @@ public class Arrays2 {
                 }
                 k++;
             }
+
             System.out.println("Напишите какой (min | max | search)");
             String value3 = scan.next();
 
+            while (true){
+                System.out.println("Напишите какой (min | max | search)");
+                value3 = scan.next();
+                if (value3.equals("min") || value3.equals("max") || value3.equals("search")){
+                    break;
+                }
+            }
             switch (value3){
-                case "минимальный":
+                case "min":
                     try {
                         System.out.println(Collections.min(list, null));
-                        break;
+
                     } catch (NoSuchElementException e){
-                        
+
                     }
+                    break;
+                case "max":
+                    try {
+                        System.out.println(Collections.max(list, null));
+
+                    } catch (NoSuchElementException e){
+
+                    }
+                    break;
+                case "search":
+                    System.out.print("Уточните данные поиска: ");
+                    String value4 = scan.next();
+                    for (int i = 0; i < arr.length; i++){
+
+                        if (arr[i].equals(value4)){
+                            System.out.println("Элемент \""
+                                    + value4
+                                    + "\" содержится в данном массиве, находится под номером "
+                                    + i);
+                            break;
+                        }
+
+                    }
+                    break;
 
                 default:
                     System.out.println("Введено непраивльное значение");
